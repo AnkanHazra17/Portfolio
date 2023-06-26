@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        
+    <title>Portfolio WebSite - Ankan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wraper">
+
+        <div class="container">
+
+            <!-- Nav Bar -->
+            <div class="nav-bar">
+                
+                <dev class="logo">
+                    <img src="./images/userAsset/logo-main.png" class="logo-img">
+                    <div class="logo-text">nkan</div>
+                </dev>
+
+                <div class="nav-item">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactMe">Contact Me</a></div>
+                </div>
+               
+            </div>
+
+            <!-- Hero Section  -->
+            <div class="hero-section"> 
+
+                <!-- Hero section left side -->
+                <div class="hero-section-left">
+                    <div class="heading">
+                        Hello, it's me <div id="name">Ankan Hazra</div>
+                    </div>
+
+                    <div class="heading sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+
+                    <div class="description">
+                        <p>I am a Software developer and this is my portfolio website.</p> 
+                        <p>Here you'll know about my journey as a Software developer.</p>
+                    </div>
+
+                    <div class="btn" id="btn1">Hire Me</div>
+                </div>
+
+
+                <!-- Hero section right side  -->
+                <div class="hero-section-right">
+                    <div class="absolute icon" id="dots">
+                        <img src="./images/userAsset/dots.png" alt="">
+                    </div>
+                    <div class="absolute icon" id="cube">
+                        <img src="./images/userAsset/cube.png" alt="">
+                    </div>
+                    <div class="absolute icon" id="circle">
+                        <img src="./images/userAsset/circle.png" alt="">
+                    </div>
+                    <div class="absolute icon" id="plus">
+                        <img src="./images/userAsset/plus.png" alt="">
+                    </div>
+                    <div class="absolute icon" id="zigzags">
+                        <img src="./images/userAsset/zigzags.png" alt="">
+                    </div>
+                    <div class="absolute icon" id="user-main">
+                        <img src="./images/userAsset/user-main.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script  -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".role", {
+            strings:["Fullstack Web Developer", "Java Programer", "Software Developer", "Coder"],
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+</body>
+</html>
