@@ -138,7 +138,6 @@ body{
     height: 400px;
     width: 372px;
     position: relative;
-    border: 2px solid red;
 }
 
 #user-main{
@@ -153,8 +152,21 @@ body{
     position: absolute;
 }
 
+#dots{
+    z-index: 1;
+    bottom: -0.5rem;
+    right: 1.5rem;
+    animation: dotsAnimation 5s infinite;
+}
 
+#cube{
+    z-index: 1;
+    top: 5rem;
+    right: 3rem;
+    animation: cubeRotate 3s infinite;
+}
 
+/* Keyframs */
 @keyframes scaleImage {
     0%{
         filter: grayscale(0);
@@ -172,4 +184,28 @@ body{
         filter: grayscale(0);
     }
     
+}
+
+@keyframes dotsAnimation {
+    0%{
+        transform: translateY(0px) scale(1);
+    }
+    50%{
+        transform: translateY(-15px) scale(1.1);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes cubeRotate {
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-15px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
 }
