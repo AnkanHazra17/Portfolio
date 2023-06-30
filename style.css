@@ -355,9 +355,10 @@ body{
 
 .project-btn{
     top: 0;
-    width: 140px;
-    font-size: small;
+    width: 129px;
+    font-size: 18px;
     border: none;
+    padding: 0.7rem 0;
 }
 
 .icon{
