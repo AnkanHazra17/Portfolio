@@ -402,3 +402,83 @@ body{
     margin-left: 92px;
     background-image: url(images/projects/Project4.png);
 }
+
+/* Skills Section  */
+.skills-container{
+    position: relative;
+    display: flex;
+    padding: 4rem;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.left-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem 2rem;
+}
+
+.fade-text{
+    font-size: 10em;
+    font-weight: bold;
+    color: rgb(231, 231, 231);
+    position: absolute;
+    bottom: -16.5%;
+    right: -2%;
+    user-select: none;
+}
+
+.blob-style{
+    position: absolute;
+    z-index: -1;
+    width: 42%;
+    top: 28%;
+    left: 28%;
+    animation: blobAnimation 3s linear infinite;
+}
+
+@keyframes blobAnimation {
+    50%{
+        top: 32%;
+        left: 24%;
+    }
+}
+
+.skill-icon{
+    width: 61px;
+    transition: 0.3s;
+}
+
+.skill-icon:hover{
+    transform: scale(1.2);
+}
+
+.skill-heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: #5955d9;
+    line-height: 50px;
+}
+
+.caps{
+    font-size: 70px;
+}
+
+.skill-subheading{
+    margin-top: 1rem;
+    width: 86%;
+    text-align: justify;
+}
+.skill-subheading p{
+    margin-top: 1rem;
+}
