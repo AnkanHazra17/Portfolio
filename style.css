@@ -255,7 +255,7 @@ body{
     
 }
 
-.project-card::before{
+.card-left::before{
     content: "";
     position: absolute;
     top: 0;
@@ -268,8 +268,25 @@ body{
     transition: all 0.4s;
     z-index: 1;
 }
+.card-right::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.4s;
+    z-index: 1;
+}
 
-.project-card:hover::before{
+.card-left:hover::before{
+    transform: scaleX(1);
+}
+
+.card-right:hover::before{
     transform: scaleX(1);
 }
 
