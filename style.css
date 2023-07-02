@@ -495,6 +495,7 @@ body{
     color: #343d68;
     font-size: 2rem;
     padding-top: 1.3rem;
+    text-transform: capitalize;
 }
 
 .contactme-form-container{
@@ -508,6 +509,8 @@ body{
     width: 70%;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    margin: 2rem 5rem;
     align-items: center;
     justify-content: center;
 }
@@ -523,19 +526,91 @@ body{
     height: 42px;
     padding: 0 2rem;
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 2px 2px 10px #1f1f1f;
     border: none;
     margin: 0.8rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-field-textarea{
     height: auto;
     padding-top: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 #submit-btn{
+    top: 0;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    transition: 0.3s;
 }
+
+#submit-btn:hover{
+    scale: 0.9;
+    
+}
+
+.submit-icon{
+    margin: 0 0.7rem;
+    font-size: 1.4rem;
+}
+
+footer{
+    position: relative;
+    margin-top: -1px;
+    padding: 2rem 5rem;
+    background-color: #343d68;
+}
+
+.footer-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+}
+
+.footer-faded-text{
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    color: #535c87;
+    font-size: 3em;
+    user-select: none;
+}
+
+.link-wraper{
+    display: flex;
+    gap: 2rem;
+}
+
+.link-wraper div a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.link-wraper div a:hover{
+    color: #e84949;
+}
+
+.icon-wraper{
+    display: flex;
+    gap: 2rem;
+    font-size: 35px;
+    margin-right: 2rem;
+}
+
+.icon-wraper i{
+    color: white;
+    transition: 0.4s;
+}
+
+.icon-wraper i:hover{
+    color: #e84949;
+}
+
